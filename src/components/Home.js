@@ -11,10 +11,10 @@ const Home = () => {
 
             {/* the first div - PROVIDE BEST  */}
 
-            <div className="one flex flex-col-reverse z-50">
+            <div className="one flex flex-col-reverse">
                 <div className="oneleft px-[7%] flex flex-col gap-[25px] text-white bg-neutral-900 pt-[50px] pb-[80px] mt-[-2px]">
-                    <div className="font-semibold text-[25px]">
-                        <h2>We Provide best Accounting & Tax Service For You</h2>
+                    <div className="font-semibold text-[26px]">
+                        <h2>We Provide best <span className="bg-yellow-300 text-black"> Accounting </span> & Tax Service For You</h2>
                     </div>
                     <div className="text-[13px]">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit recusandae voluptatem officiis culpa veniam quaerat.</p>
@@ -25,15 +25,15 @@ const Home = () => {
 
                 </div>
                 <div className="oneright w-screen h-[250px]">
-                    <img className="object-cover w-full" src={require("../images/group.jpg")} alt="" />
+                    <img className="object-cover h-full w-full" src={require("../images/group.jpg")} alt="" />
 
                 </div>
             </div>
 
             {/* the second block - KUJISIFU */}
 
-            <div className="two flex flex-col items-center">
-                <div className="flex flex-col gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+            <div className="two flex flex-col gap-[30px] items-center mt-[-50px]">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
                         <FontAwesomeIcon icon={faChessKnight} />
                     </div>
@@ -44,7 +44,7 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
                         <FontAwesomeIcon icon={faChessKnight} />
                     </div>
@@ -55,7 +55,7 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
                         <FontAwesomeIcon icon={faChessKnight} />
                     </div>
@@ -166,7 +166,7 @@ const Home = () => {
                         <div>
                             <img src={require("../images/meeting.jpg")} alt="" />
                         </div>
-                        <div className="relative flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                             <div className="text-yellow-500 text-[30px]">
                                 <FontAwesomeIcon icon={faChessKnight} />
                             </div>
@@ -185,7 +185,7 @@ const Home = () => {
                         <div>
                             <img src={require("../images/meeting.jpg")} alt="" />
                         </div>
-                        <div className="relative flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                             <div className="text-yellow-500 text-[30px]">
                                 <FontAwesomeIcon icon={faChessKnight} />
                             </div>
@@ -204,7 +204,7 @@ const Home = () => {
                         <div>
                             <img src={require("../images/meeting.jpg")} alt="" />
                         </div>
-                        <div className="relative flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                             <div className="text-yellow-500 text-[30px]">
                                 <FontAwesomeIcon icon={faChessKnight} />
                             </div>
@@ -230,7 +230,7 @@ const Home = () => {
 
             <div className="five relative">
                 <div className="h-[400px] overflow-hidden  filter brightness-[44%]">
-                    <img className="object-cover h-full" src={require("../images/gworking.jpg")} alt="" />
+                    <img className="object-cover w-full h-full" src={require("../images/gworking.jpg")} alt="" />
                 </div>
                 <div className="absolute flex flex-col gap-[20px] top-[20px] px-[7%]">
                     <div className="flex flex-col gap-[10px] text-white">
