@@ -40,7 +40,7 @@ const Aboutus = () => {
             </div>
 
             <div className="aboutone">
-                <div className="three flex flex-col flex-col-reverse gap-[20px] lg:gap-[0] lg:flex-row lg:gap-[20px] px-[7%] lg:px-[17%] py-[40px]">
+                <div className="three flex flex-col flex-col-reverse gap-[20px] lg:gap-[25px] lg:flex-row lg:gap-[20px] px-[7%] lg:px-[17%] py-[40px]">
                     <div className="threeleft flex flex-col gap-[10px] lg:w-[50%]">
                         <div className="h-250px">
                             <img className="object-cover" src={require("../images/meeting.jpg")} alt="" />
@@ -137,8 +137,8 @@ const Aboutus = () => {
 
             {/* the second div  */}
 
-            <div className="abouttwo">
-                <div className="abtowleft flex flex-col gap-[30px] bg-neutral-900 text-white px-[7%] py-[30px]">
+            <div className="abouttwo flex flex-col lg:flex-row">
+                <div className="abtowleft flex flex-col gap-[30px] bg-neutral-900 text-white px-[7%] py-[30px] lg:w-[50%]">
                     <div>
                         <h3 className="text-yellow-300 text-[12px] font-semibold">Why Choose Us</h3>
                         <div className="mt-[3px] border-b-4 w-[10%] border-yellow-300"></div>
@@ -163,8 +163,8 @@ const Aboutus = () => {
                     </div>
 
                 </div>
-                <div className="abtworight hidden lg:block h-[450px] overflow-hidden">
-                    <img className="object-cover h-full w-full" src={require("../images/wlaptop.jpg")} alt="" />
+                <div className="abtworight hidden lg:block h-[600px] lg:w-[50%] overflow-hidden">
+                    <img className="object-cover h-full w-full" src={require("../images/meeting.jpg")} alt="" />
 
                     <div className="">
                         {/* ABSOLUTE DIV  */}
@@ -174,27 +174,27 @@ const Aboutus = () => {
 
             </div>
 
-            <div className="aboutthree flex flex-col gap-[20px] px-[7%] py-[50px]">
+            <div className="aboutthree flex flex-col gap-[20px] px-[7%] lg:px-[17%] pt-[50px] pb-[80px]">
 
-                <div className="flex flex-col gap-[10px]">
+                <div className="flex flex-col gap-[10px] lg:items-center">
                     <div className="text-[12px] font-semibold">
                         <h3>Our Team</h3>
-                        <div className="border-t-4 w-[5%] border-yellow-500"></div>    
+                        <div className="border-t-4 w-[5%] lg:w-[45%] border-yellow-500"></div>    
                     </div>
                     <div className="font-semibold text-[18px]"><h2>Meet With Professional Team</h2></div>
                     <div className="text-[13px] text-neutral-500"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque ex explicabo necessitatibus veniam! Quasi impedit, incidunt dolore veniam consectetur beatae</p></div>
                 </div>
 
-                <div className="flex flex-col gap-[40px] items-center">
+                <div className="flex flex-col lg:flex-row lg:justify-center gap-[50px] items-center">
 
                     {team.map((items, index)=>{
 
                         return(
-                            <div className="abteam h-[350px] w-[250px]">
+                            <div className="abteam h-[360px] w-[280px] relative">
                                 <img className="object-cover h-full w-full" src={items.image} alt="" />
-                                <div className="abteamdetails">
-                                    <h2>{items.name}</h2>
-                                    <p>{items.position}</p>
+                                <div className="abteamdetails absolute bg-white py-[10px] w-[80%] left-[10%] bottom-[-30px] text-center shadow-xl">
+                                    <h2 className="text-[16px] font-semibold">{items.name}</h2>
+                                    <p className="text-[13px] text-neutral-600">{items.position}</p>
                                 </div>
                             </div>
                         )
@@ -203,6 +203,15 @@ const Aboutus = () => {
 
                 </div>
 
+            </div>
+
+            <div className="aboutfour relative text-white h-[300px] lg:h-[400px] mb-[-2px] ">
+                <img className=" filter brightness-[44%] object-cover h-full w-full" src={require("../images/meeting.jpg")} alt="" />
+                <div className="aboutdet px-[7%] lg:px-[17%] absolute top-[30px] lg:top-[20%] flex flex-col gap-[20px] lg:w-[100%] lg:mx-auto lg:gap-[40px] text-center">
+                    <div className="text-[19px] lg:text-[30px] font-semibold lg:w-40% lg:mx-auto"><h2>Contact Us If You Have a Question About Our Service</h2></div>
+                    <div className="text-[13px] lg:text-[16px] text-neutral-300 lg:w-[60%] lg:mx-auto"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam unde excepturi reiciendis, quaerat provident accusamus sed omnis nulla natus obcaecati illo, animi officiis, sunt perferendis dicta cum. At, labore.</p></div>
+                    <div><button className="bb">CONTACT US</button></div>
+                </div>
             </div>
 
         </div>
