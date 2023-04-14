@@ -11,7 +11,7 @@ const Home = () => {
 
             {/* the first div - PROVIDE BEST  */}
 
-            <div className="one mt-[50px] flex flex-col-reverse lg:flex-row">
+            <div className="one mt-[55px] lg:mt-[100px] flex flex-col-reverse lg:flex-row">
                 <div className="oneleft lg:w-[50%] px-[7%] lg:pl-[17%] lg:justify-center flex flex-col gap-[25px] text-white bg-neutral-900 pt-[50px] pb-[100px] mt-[-2px]">
                     <div className="font-semibold text-[26px]">
                         <h2>We Provide best <span className="bg-yellow-300 text-black"> Accounting </span> & Tax Service For You</h2>
@@ -170,9 +170,9 @@ const Home = () => {
                 <div className="fourone flex flex-col lg:flex-row lg:justify-between gap-[20px] pb-[40px]">
                     <div className="text-[13px] font-semibold uppercase">
                         <h3>Services</h3>
-                        <div className="border-b-4 border-yellow-400 w-[50%]"></div>
+                        <div className="border-b-4 border-yellow-400 w-[10%] lg:w-[50%]"></div>
                     </div>
-                    <div className="text-center">
+                    <div className="lg:text-center">
                         <h2 className="text-[20px] font-semibold mb-[4px]">Services We Offer</h2>
                         <p className="text-[13px] text-neutral-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, laudantium explicabo porro</p>
                     </div>
