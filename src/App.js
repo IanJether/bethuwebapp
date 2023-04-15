@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Aboutus from "./components/Aboutus";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 
 
@@ -20,6 +22,8 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Aboutus" element={<Aboutus/>}/>
+            <Route path="/Services" element={<Services/>}/>
+            <Route path="/Contact" element={<Contact/>}/>
         </Routes>
         <Footer/>
     </div>

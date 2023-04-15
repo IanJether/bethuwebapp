@@ -1,6 +1,6 @@
 import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import ServicesList from "../data/Services";
 
 const Home = () => {
 
@@ -181,63 +181,33 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="fourtwo flex flex-col lg:flex-row gap-[30px] ">
-                    <div className="flex flex-col items-center">
-                        <div className="">
-                            <img src={require("../images/meeting.jpg")} alt="" />
-                        </div>
-                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                            <div className="text-yellow-500 text-[30px]">
-                                <FontAwesomeIcon icon={faChessKnight} />
+
+
+                    {ServicesList.filter((array, index) => index < 3).map((items) => {
+
+                        return (
+                            <div className="flex flex-col items-center">
+                                <div className="w-[100%] h-[250px] overflow-hidden">
+                                    <img className="h-full w-full object-cover " src={items.image} alt="" />
+                                </div>
+                                <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                                    <div className="text-yellow-500 text-[30px]">
+                                        <FontAwesomeIcon icon={items.icon} />
+                                    </div>
+                                    <div className="text-[17px] font-semibold">
+                                        <h3>{items.title}</h3>
+                                    </div>
+                                    <div className="text-[13px] text-neutral-500">
+                                        <p>{items.text}</p>
+                                    </div>
+                                    <div className="absolute bottom-[-23px]">
+                                        <button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="text-[17px] font-semibold">
-                                <h3>Saving Strategies</h3>
-                            </div>
-                            <div className="text-[13px] text-neutral-500">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
-                            </div>
-                            <div className="absolute bottom-[-23px]">
-                                <button className="bbs"><FontAwesomeIcon icon={faArrowRight} /></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div>
-                            <img src={require("../images/meeting.jpg")} alt="" />
-                        </div>
-                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                            <div className="text-yellow-500 text-[30px]">
-                                <FontAwesomeIcon icon={faChessKnight} />
-                            </div>
-                            <div className="text-[17px] font-semibold">
-                                <h3>Saving Strategies</h3>
-                            </div>
-                            <div className="text-[13px] text-neutral-500">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
-                            </div>
-                            <div className="absolute bottom-[-23px]">
-                                <button className="bbs"><FontAwesomeIcon icon={faArrowRight} /></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div>
-                            <img src={require("../images/meeting.jpg")} alt="" />
-                        </div>
-                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                            <div className="text-yellow-500 text-[30px]">
-                                <FontAwesomeIcon icon={faChessKnight} />
-                            </div>
-                            <div className="text-[17px] font-semibold">
-                                <h3>Saving Strategies</h3>
-                            </div>
-                            <div className="text-[13px] text-neutral-500">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
-                            </div>
-                            <div className="absolute bottom-[-23px]">
-                                <button className="bbs"><FontAwesomeIcon icon={faArrowRight} /></button>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
+
 
                 </div>
 
