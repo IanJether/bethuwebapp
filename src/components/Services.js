@@ -1,6 +1,7 @@
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
+import { Link } from "react-router-dom";
 
 
 
@@ -36,6 +37,8 @@ const Services = () => {
 
                     {ServicesList.filter((array, index) => index < 3).map((items) => {
 
+                        const address = "/Services/" + items.title;
+
                         return (
                             <div className="flex flex-col items-center">
                                 <div className="w-[100%] h-[250px] overflow-hidden">
@@ -52,7 +55,7 @@ const Services = () => {
                                         <p>{items.text}</p>
                                     </div>
                                     <div className="absolute bottom-[-23px]">
-                                        <button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button>
+                                        <Link to={address}> <button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -67,6 +70,8 @@ const Services = () => {
 
                     {ServicesList.filter((array, index) => index >= 3).map((items) => {
 
+                        const address = "/Services/" + items.title;
+
                         return (
                             <div className="flex flex-col items-center">
                                 <div className="w-[100%] h-[250px] overflow-hidden">
@@ -83,7 +88,7 @@ const Services = () => {
                                         <p>{items.text}</p>
                                     </div>
                                     <div className="absolute bottom-[-23px]">
-                                        <button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button>
+                                        <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
                                     </div>
                                 </div>
                             </div>

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Servicesdetails from "./components/ServicesDetails";
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/Aboutus" element={<Aboutus/>}/>
             <Route path="/Services" element={<Services/>}/>
             <Route path="/Contact" element={<Contact/>}/>
+            <Route path="/Services/:title" element={<Servicesdetails/>}/>
         </Routes>
         <Footer/>
     </div>

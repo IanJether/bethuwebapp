@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="contactboxes px-[7%] flex flex-col">
+            <div className="contactboxes px-[7%] lg:px-[17%] flex flex-col lg:gap-[7px] lg:flex-row">
                 <div className="boxone flex gap-[7px] w-[100%]">
                     <div className="boxloc flex flex-col gap-[10px] text-center items-center justify-center shadow-xl w-[50%] h-[130px]">
                         <div className="text-[25px] text-yellow-300"><FontAwesomeIcon icon={faLocationPin} /></div>
@@ -59,11 +59,11 @@ const Contact = () => {
 
 
             <form action="">
-                <div className="form px-[7%] flex flex-col gap-[30px] pt-[70px] pb-[50px]">
-                    <div><input className="border border-neutral-200 w-[100%] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Name" type="text" /></div>
-                    <div><input className="border border-neutral-200 w-[100%] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Email" type="text" /></div>
-                    <div><input className="border border-neutral-200 w-[100%] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Subject" type="text" /></div>
-                    <div><textarea className="border border-neutral-200 w-[100%] h-[130px] p-[10px] text-[12px] outline-none hover:border-yelllow-500" placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea></div>
+                <div className="form px-[7%] lg:px-[17%] flex flex-col lg:items-center gap-[30px]  pt-[70px] pb-[50px]">
+                    <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Name" type="text" /></div>
+                    <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Email" type="text" /></div>
+                    <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Subject" type="text" /></div>
+                    <div><textarea className="border border-neutral-300 w-[100%] lg:w-[400px] h-[130px] p-[10px] text-[12px] outline-none hover:border-yelllow-500" placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea></div>
                     <div> <button className="bb uppercase">Send message</button></div>
                 </div>
             </form>

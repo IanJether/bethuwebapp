@@ -72,7 +72,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbarbbutton hidden lg:block">
-                   <Link to="/Contact"> <button className="bb">Contact Us</button> </Link>
+                   <Link to="/Contact"> <button className="bb uppercase">Contact Us</button> </Link>
 
                 </div>
 

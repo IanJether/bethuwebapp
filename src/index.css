@@ -10,3 +10,9 @@
 .bbs{
   @apply w-[40px] h-[40px] bg-yellow-300 font-semibold text-[12px] text-black rounded-full;
 }
+
+.swiper.flex .swiper-wrapper{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}

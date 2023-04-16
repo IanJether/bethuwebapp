@@ -1,6 +1,7 @@
 import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -185,6 +186,9 @@ const Home = () => {
 
                     {ServicesList.filter((array, index) => index < 3).map((items) => {
 
+                        const address = "/Services/" + items.title;
+
+
                         return (
                             <div className="flex flex-col items-center">
                                 <div className="w-[100%] h-[250px] overflow-hidden">
@@ -201,7 +205,7 @@ const Home = () => {
                                         <p>{items.text}</p>
                                     </div>
                                     <div className="absolute bottom-[-23px]">
-                                        <button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button>
+                                        <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -251,49 +255,37 @@ const Home = () => {
 
                             </div>
                         </div>
-                        <div className="flex flex-col justify-between h-[200px] bg-white py-[10px] px-[5%] hidden lg:flex">
-                            <div className="text-neutral-500 text-[13px]">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut provident odio at dolorum nobis architecto </p>
-                            </div>
-                            <div className="flex justify-between">
-                                <div className="flex gap-[10px]">
-                                    <div className="bg-gray-600 h-[50px] w-[50px] rounded-full">
-                                        {/* picture  */}
-                                    </div>
-                                    <div>
-                                        <div className="text-[15px] font-semibold"><p>Steve Kombo</p></div>
-                                        <div className="text-[13px] text-neutral-500"><p>MD, Fineteklabs</p></div>
-                                    </div>
-                                </div>
-                                <div className="text-yellow-300 text-[30px]">
-                                    <FontAwesomeIcon icon={faQuoteRight} />
-                                </div>
 
-                            </div>
-                        </div>
-                        <div className="flex flex-col justify-between h-[200px] bg-white py-[10px] px-[5%] hidden lg:flex">
-                            <div className="text-neutral-500 text-[13px]">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut provident odio at dolorum nobis architecto </p>
-                            </div>
-                            <div className="flex justify-between">
-                                <div className="flex gap-[10px]">
-                                    <div className="bg-gray-600 h-[50px] w-[50px] rounded-full">
-                                        {/* picture  */}
-                                    </div>
-                                    <div>
-                                        <div className="text-[15px] font-semibold"><p>Steve Kombo</p></div>
-                                        <div className="text-[13px] text-neutral-500"><p>MD, Fineteklabs</p></div>
-                                    </div>
-                                </div>
-                                <div className="text-yellow-300 text-[30px]">
-                                    <FontAwesomeIcon icon={faQuoteRight} />
-                                </div>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+
+
+            {/* block 6 - CONTACT US */}
+
+            <div className="six px-[7%] py-[30px] hidden">
+                <div className="flex flex-col gap-[10px] text-black">
+                    <div className="text-[13px] font-semibold ">
+                        <h2>Testimonials</h2>
+                        <div className="border-b-4 border-yellow-400 w-[4%]"></div>
+                    </div>
+                    <div className="text-[20px] font-semibold "><h3>What They Say About Us</h3></div>
+                    <div className="text-[13px] text-neutral-700 "><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem neque sit impedit eaque natus</p></div>
+                </div>
+
+                <form action="">
+                    <div className="form px-[7%] lg:px-[17%] flex flex-col lg:items-center gap-[30px]  pt-[70px] pb-[50px]">
+                        <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Name" type="text" /></div>
+                        <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Email" type="text" /></div>
+                        <div><input className="border border-neutral-300 w-[100%] lg:w-[400px] h-[45px] px-[10px] text-[12px] outline-none hover:border-yellow-500" placeholder="Enter Subject" type="text" /></div>
+                        <div><textarea className="border border-neutral-300 w-[100%] lg:w-[400px] h-[130px] p-[10px] text-[12px] outline-none hover:border-yelllow-500" placeholder="Your Message" name="" id="" cols="30" rows="10"></textarea></div>
+                        <div> <button className="bb uppercase">Send message</button></div>
+                    </div>
+                </form>
+            </div>
+
+
 
 
         </div>
