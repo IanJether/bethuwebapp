@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 
@@ -47,7 +50,7 @@ const Servicesdetails = () => {
             })}
 
 
-            <div className="slider lg:hidden px-[17%]">
+            <div className="slider lg:hidden px-[7%]">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                     pagination={{ clickable: true }}
@@ -91,7 +94,7 @@ const Servicesdetails = () => {
                 </Swiper>
             </div>
 
-            <div className="slider hidden lg:block px-[17%]">
+            <div className="slider hidden lg:block px-[17%] py-[70px]">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                     pagination={{ clickable: true }}

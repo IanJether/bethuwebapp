@@ -2,6 +2,8 @@ import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faThumbsUp } 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 const Home = () => {
 
@@ -157,7 +159,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[250px] lg:h-full lg:w-[50%]">
+                        <div className="h-[250px] lg:h-full lg:w-[50%] mt-[15px] lg:mt-[0]">
                             <img className="object-cover h-full w-full" src={require("../images/glaptop.jpg")} alt="" />
                         </div>
                     </div>
@@ -181,7 +183,95 @@ const Home = () => {
                         <button className="bb">ALL SERVICES</button>
                     </div>
                 </div>
-                <div className="fourtwo flex flex-col lg:flex-row gap-[30px] ">
+
+                <div className="slider lg:hidden">
+                    <Swiper
+                        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                        pagination={{ clickable: true }}
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        className=" swipe flex justify-center items-center"
+                        data
+                    >
+                        {ServicesList.map((items) => {
+
+                            const address = "/Services/" + items.title;
+
+                            return (
+                                <SwiperSlide className="flex mx-auto justify-center items-center py-[40px]" key={items.key}>
+                                    <div className="otherservice mx-auto flex flex-col items-center">
+                                        <div className="w-[100%] h-[250px] overflow-hidden">
+                                            <img className="h-full w-full object-cover " src={items.image} alt="" />
+                                        </div>
+                                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                                            <div className="text-yellow-500 text-[30px]">
+                                                <FontAwesomeIcon icon={items.icon} />
+                                            </div>
+                                            <div className="text-[17px] font-semibold">
+                                                <h3>{items.title}</h3>
+                                            </div>
+                                            <div className="text-[13px] text-neutral-500">
+                                                <p>{items.text}</p>
+                                            </div>
+                                            <div className="absolute bottom-[-23px]">
+                                                <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
+                </div>
+
+                <div className="slider hidden lg:block">
+                    <Swiper
+                        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                        pagination={{ clickable: true }}
+                        spaceBetween={10}
+                        slidesPerView={3}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        className=" swipe flex justify-center items-center"
+                        data
+                    >
+                        {ServicesList.map((items) => {
+
+                            const address = "/Services/" + items.title;
+
+                            return (
+                                <SwiperSlide className="flex mx-auto justify-center items-center py-[40px]" key={items.key}>
+                                    <div className="otherservice mx-auto flex flex-col items-center">
+                                        <div className="w-[100%] h-[250px] overflow-hidden">
+                                            <img className="h-full w-full object-cover " src={items.image} alt="" />
+                                        </div>
+                                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
+                                            <div className="text-yellow-500 text-[30px]">
+                                                <FontAwesomeIcon icon={items.icon} />
+                                            </div>
+                                            <div className="text-[17px] font-semibold">
+                                                <h3>{items.title}</h3>
+                                            </div>
+                                            <div className="text-[13px] text-neutral-500">
+                                                <p>{items.text}</p>
+                                            </div>
+                                            <div className="absolute bottom-[-23px]">
+                                                <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
+                </div>
+                {/* <div className="fourtwo flex flex-col lg:flex-row gap-[30px] hidden ">
 
 
                     {ServicesList.filter((array, index) => index < 3).map((items) => {
@@ -213,7 +303,7 @@ const Home = () => {
                     })}
 
 
-                </div>
+                </div> */}
 
             </div>
 
