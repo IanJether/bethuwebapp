@@ -225,7 +225,7 @@ const Home = () => {
                 <div className="h-[400px] overflow-hidden  filter brightness-[44%]">
                     <img className="object-cover w-full h-full" src={require("../images/gworking.jpg")} alt="" />
                 </div>
-                <div className="absolute flex flex-col  gap-[20px] top-[20px] px-[7%] lg:px-[17%]">
+                <div className="absolute flex flex-col  gap-[20px] top-[20px] px-[7%] lg:w-[70%] lg:px-[17%]">
                     <div className="flex flex-col gap-[10px] text-white">
                         <div className="text-[13px] font-semibold ">
                             <h2>Testimonials</h2>
