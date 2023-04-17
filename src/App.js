@@ -12,11 +12,7 @@ import Servicesdetails from "./components/ServicesDetails";
 function App() {
 
 
-  const menucl = () =>{
-
-
-
-  }
+ 
   return (
     <div className="App">
         <Navbar/>

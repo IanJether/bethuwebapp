@@ -30,7 +30,7 @@ const Aboutblock = () => {
     ]
 
     return (
-        <div className="three lg:flex lg:gap-[20px] px-[7%] lg:px-[17%] py-[60px]">
+        <div className="three flex flex-col gap-[10px] lg:flex-row  lg:gap-[20px] px-[7%] lg:px-[17%] py-[60px]">
             <div className="threeleft flex flex-col gap-[10px] lg:w-[50%]">
                 <div className="h-[400px] overflow-hidden">
                     <img className="object-cover h-full w-full" src={require("../../images/buil3.jpg")} alt="" />
@@ -47,7 +47,7 @@ const Aboutblock = () => {
                             <p>Years Of Experience</p>
                         </div>
                     </div>
-                    <div className="h-[270px] lg:h-full lg:w-[50%]">
+                    <div className="h-[270px] lg:h-full lg:w-[50%] hidden lg:block">
                         <img className="object-cover" src={require("../../images/study.jpg")} alt="" />
                     </div>
                 </div>

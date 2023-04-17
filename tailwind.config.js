@@ -8,6 +8,9 @@ module.exports = {
         'secondary' : '#033067',
         'action' : '#ffa500'
       },
+      boxShadow:{
+        'pxl' : '4px 7px 14px 2px #b3b3b3'
+      }
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 import { faFacebook, faInstagram, faLinkedin, faPage4, faPagelines, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faAngleDoubleDown, faAngleDown, faBars, faContactCard, faHome, faLocationPin, faNewspaper, faPaperPlane, faPeopleGroup, faPhone, faX } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleDown, faAngleDown, faBars, faContactCard, faHome, faInfo, faInfoCircle, faLocationPin, faNewspaper, faPaperPlane, faPeopleGroup, faPhone, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -57,17 +57,17 @@ const Navbar = () => {
             <div className="flex justify-between h-[60px] lg:px-[17%] items-center">
 
                 <div className="font-bold lg:text-primary lg:w-[150px]">
-                    <h2>LOGO</h2>
+                    <Link to="/"> <h2>LOGO</h2></Link>
                 </div>
 
                 <div className="navbarcontent hidden lg:flex lg:items-center lg:justify-center absolute lg:relative h-screen lg:h-[0] w-[80%] lg:w-[100%] mt-[56px] lg:mt-[0] bg-white top-[1px] lg:top-[0] left-[-1px] lg:left-[0] px-[7%] lg:px-[0]">
                     <ul className="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-[35px] text-[14px] font-semibold mt-[20px] lg:mt-[0]">
-                        <Link to="/"><li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[9px]"><FontAwesomeIcon icon={faHome}/></span> HOME</li></Link>
-                       <Link to="/Aboutus" ><li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[9px]"><FontAwesomeIcon icon={faPeopleGroup}/></span> ABOUT US</li></Link>
-                        <Link to="/Services"> <li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[11px]"><FontAwesomeIcon icon={faNewspaper}/></span> SERVICES <span className="ml-[2px] hidden lg:inline"> <FontAwesomeIcon icon={faAngleDown}/> </span></li></Link>
-                        <li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[13px]"><FontAwesomeIcon icon={faPage4}/></span> PAGES</li>
-                        <li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[13px]"><FontAwesomeIcon icon={faPaperPlane}/></span> BLOG</li>
-                        <Link to="/Contact"><li onClick={menucl} className="border-t pt-[30px] lg:hidden lg:border-0 lg:pt-[0]"><span className="lg:hidden text-yellow-400 mr-[10px]"><FontAwesomeIcon icon={faContactCard}/></span> CONTACT US</li></Link>
+                        <Link to="/"><li onClick={menucl}><span className="lg:hidden text-primary mr-[9px]"><FontAwesomeIcon icon={faHome}/></span> HOME</li></Link>
+                       <Link to="/Aboutus" ><li onClick={menucl}><span className="lg:hidden text-primary mr-[9px]"><FontAwesomeIcon icon={faInfoCircle}/></span> ABOUT US</li></Link>
+                        <Link to="/Services"> <li onClick={menucl}><span className="lg:hidden text-primary mr-[11px]"><FontAwesomeIcon icon={faNewspaper}/></span> SERVICES <span className="ml-[2px] hidden lg:inline"> <FontAwesomeIcon icon={faAngleDown}/> </span></li></Link>
+                        {/* <li onClick={menucl}><span className="lg:hidden text-yellow-400 mr-[13px]"><FontAwesomeIcon icon={faPage4}/></span> PAGES</li> */}
+                        <Link to="/Contact"><li onClick={menucl}><span className="lg:hidden text-primary mr-[13px]"><FontAwesomeIcon icon={faPaperPlane}/></span>CONTACT</li></Link>
+                        <Link to="/Contact"><li onClick={menucl} className="border-t pt-[30px] lg:hidden lg:border-0 lg:pt-[0]"><span className="lg:hidden text-primary mr-[10px]"><FontAwesomeIcon icon={faContactCard}/></span> CONTACT US</li></Link>
                     </ul>
                 </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
 
 
 
-                <div onClick={menucl} className="text-[20px] lg:hidden text-yellow-500">
+                <div onClick={menucl} className="text-[20px] lg:hidden text-primary">
                     <span className="navbars"> <FontAwesomeIcon icon={faBars} /> </span>
                     <span className="navx hidden"> <FontAwesomeIcon icon={faX} /> </span>
                 </div>
