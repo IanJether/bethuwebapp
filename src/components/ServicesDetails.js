@@ -68,7 +68,7 @@ const Servicesdetails = () => {
                         const address = "/Services/" + items.title;
 
                         return (
-                            <SwiperSlide className="flex bg-white mx-auto justify-center items-center py-[40px]" key={items.key}>
+                            <SwiperSlide className="flex bg-white mx-auto justify-center items-center pb-[60px]" key={items.key}>
                                 <div className="otherservice mx-auto flex flex-col items-center">
                                     <div className="w-[100%] h-[250px] overflow-hidden">
                                         <img className="h-full w-full object-cover " src={items.image} alt="" />
@@ -112,7 +112,7 @@ const Servicesdetails = () => {
                         const address = "/Services/" + items.title;
 
                         return (
-                            <SwiperSlide className="flex bg-white mx-auto justify-center items-center py-[40px]" key={items.key}>
+                            <SwiperSlide className="flex bg-white mx-auto justify-center items-center pb-[60px]" key={items.key}>
                                 <div className="otherservice mx-auto flex flex-col items-center">
                                     <div className="w-[100%] h-[250px] overflow-hidden">
                                         <img className="h-full w-full object-cover " src={items.image} alt="" />

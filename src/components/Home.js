@@ -1,4 +1,4 @@
-import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faSchool, faThumbsUp, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ const Home = () => {
             <div className="one mt-[55px] lg:mt-[100px] flex flex-col-reverse lg:flex-row">
                 <div className="oneleft lg:w-[50%] px-[7%] lg:pl-[17%] lg:justify-center flex flex-col gap-[25px] text-white bg-neutral-900 pt-[50px] pb-[100px] mt-[-2px]">
                     <div className="font-semibold text-[26px]">
-                        <h2>We Provide best <span className="bg-yellow-300 text-black"> Accounting </span> & Tax Service For You</h2>
+                        <h2>We Help You <span className="bg-yellow-300 text-black"> Study Abroad </span> In The UK, US and Europe</h2>
                     </div>
                     <div className="text-[13px]">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit recusandae voluptatem officiis culpa veniam quaerat.</p>
@@ -38,10 +38,10 @@ const Home = () => {
             <div className="two lg:px-[17%] flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
                 <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
-                        <FontAwesomeIcon icon={faChessKnight} />
+                        <FontAwesomeIcon icon={faSchool} />
                     </div>
                     <div className="text-[17px] font-semibold">
-                        <h3>Saving Strategies</h3>
+                        <h3>Good Universities and Colleges</h3>
                     </div>
                     <div className="text-[13px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
@@ -49,10 +49,10 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
-                        <FontAwesomeIcon icon={faChessKnight} />
+                        <FontAwesomeIcon icon={faUser} />
                     </div>
                     <div className="text-[17px] font-semibold">
-                        <h3>Saving Strategies</h3>
+                        <h3>Experienced Proffessional Staff</h3>
                     </div>
                     <div className="text-[13px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
@@ -60,10 +60,10 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
                     <div className="text-yellow-500 text-[30px]">
-                        <FontAwesomeIcon icon={faChessKnight} />
+                        <FontAwesomeIcon icon={faCheckCircle} />
                     </div>
                     <div className="text-[17px] font-semibold">
-                        <h3>Saving Strategies</h3>
+                        <h3>Competent Advisory</h3>
                     </div>
                     <div className="text-[13px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
@@ -85,7 +85,7 @@ const Home = () => {
                                 <FontAwesomeIcon icon={faThumbsUp} />
                             </div>
                             <div className="text-white font-bold">
-                                <h3>20+</h3>
+                                <h3>10+</h3>
                             </div>
                             <div className="text-neutral-300 text-[12px]">
                                 <p>Years Of Experience</p>
@@ -102,7 +102,7 @@ const Home = () => {
                         <div className="border-b-4 border-yellow-400 w-[10%]"></div>
                     </div>
                     <div className="text-[20px] font-semibold">
-                        <h3>We Have 20 years of Experience in Accounting & tax Service</h3>
+                        <h3>We Have over 10 years of Experience in Helping Students Study Abroad</h3>
                     </div>
                     <div className="text-[13px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam eum quos repellendus fuga possimus tenetur velit praesentium debitis voluptatibus, dolor porro nihil illo maxime rem delectus error distinctio culpa?</p>
@@ -115,7 +115,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>Australia</p>
                                 </div>
                             </div>
                             <div className="flex gap-[10px]">
@@ -123,7 +123,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>Canada</p>
                                 </div>
                             </div>
                             <div className="flex gap-[10px]">
@@ -131,7 +131,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>UK</p>
                                 </div>
                             </div>
                             <div className="flex gap-[10px]">
@@ -139,7 +139,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>USA</p>
                                 </div>
                             </div>
                             <div className="flex gap-[10px]">
@@ -147,7 +147,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>Sweden</p>
                                 </div>
                             </div>
                             <div className="flex gap-[10px]">
@@ -155,7 +155,7 @@ const Home = () => {
                                     <FontAwesomeIcon icon={faCheckCircle} />
                                 </div>
                                 <div className="text-[13px] text-neutral-500">
-                                    <p>High Standards of integrity</p>
+                                    <p>Spain</p>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@ const Home = () => {
                             const address = "/Services/" + items.title;
 
                             return (
-                                <SwiperSlide className="flex mx-auto justify-center items-center py-[40px]" key={items.key}>
+                                <SwiperSlide className="flex mx-auto justify-center items-center pt-[] pb-[60px]" key={items.key}>
                                     <div className="otherservice mx-auto flex flex-col items-center">
                                         <div className="w-[100%] h-[250px] overflow-hidden">
                                             <img className="h-full w-full object-cover " src={items.image} alt="" />
@@ -246,7 +246,7 @@ const Home = () => {
                             const address = "/Services/" + items.title;
 
                             return (
-                                <SwiperSlide className="flex mx-auto justify-center items-center py-[40px]" key={items.key}>
+                                <SwiperSlide className="flex mx-auto justify-center items-center pb-[50px]" key={items.key}>
                                     <div className="otherservice mx-auto flex flex-col items-center">
                                         <div className="w-[100%] h-[250px] overflow-hidden">
                                             <img className="h-full w-full object-cover " src={items.image} alt="" />

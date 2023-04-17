@@ -32,10 +32,10 @@ const Navbar = () => {
             <div className="flex hidden lg:flex justify-between bg-neutral-900 h-[50px] lg:px-[17%] text-white">
                 <div className="flex items-center gap-[10px] text-[12px]">
                     <div>
-                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faLocationPin}/> </span> Chandaria Innovation Center</p>
+                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faLocationPin}/> </span> Tarus Building, Eldoret CBD</p>
                     </div>
                     <div>
-                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faPhone}/> </span> (+254) 112516877</p>                        
+                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faPhone}/> </span> ( +254 ) - 794949822</p>                        
                     </div>
 
                 </div>
