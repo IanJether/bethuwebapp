@@ -4,11 +4,16 @@ import ServicesList from "../data/Services";
 import { Link } from "react-router-dom";
 import Navsection from "./subcomponents/Navsection";
 import Contactprompt from "./subcomponents/Contactprompt";
+import { useEffect } from "react";
 
 
 
 
 const Services = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      }, [])
 
 
     return (

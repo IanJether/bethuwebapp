@@ -9,8 +9,13 @@ import 'swiper/css/scrollbar';
 import Aboutblock from "./subcomponents/Aboutblock";
 import Serviceslist from "./subcomponents/ServicesSlide";
 import Reviews from "./subcomponents/Reviews";
+import { useEffect } from "react";
 
 const Home = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      }, [])
 
 
     return (

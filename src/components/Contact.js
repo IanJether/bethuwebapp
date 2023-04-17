@@ -1,11 +1,16 @@
 import { faAngleRight, faClock, faContactBook, faContactCard, faEnvelope, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navsection from "./subcomponents/Navsection";
+import { useEffect } from "react";
 
 
 
 
 const Contact = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      }, [])
 
 
     return (
@@ -26,12 +31,12 @@ const Contact = () => {
 
             <div className="contactboxes px-[7%] lg:px-[17%] flex flex-col gap-[13px] lg:gap-[7px] lg:flex-row">
                 <div className="boxone flex gap-[10px] w-[100%]">
-                    <div className="boxloc flex flex-col gap-[10px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
+                    <div className="boxloc flex flex-col gap-[7px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
                         <div className="text-[26px] text-primary"><FontAwesomeIcon icon={faLocationPin} /></div>
                         <div className="text-[16px] font-semibold"><h3>Visit Us</h3></div>
                         <div className="text-[14px] text-neutral-400"><p>Tarus Building, Eldoret</p></div>
                     </div>
-                    <div className="phonebox flex flex-col gap-[10px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
+                    <div className="phonebox flex flex-col gap-[7px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
                         <div className="text-[26px] text-primary"><FontAwesomeIcon icon={faContactCard} /></div>
                         <div className="text-[16px] font-semibold"><h3>Call Us</h3></div>
                         <div className="text-[14px] text-neutral-400"><p>(+254) - 112516877</p></div>
@@ -39,12 +44,12 @@ const Contact = () => {
 
                 </div>
                 <div className="boxtwo flex gap-[10px] w-[100%]">
-                    <div className="boxloc flex flex-col gap-[10px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
+                    <div className="boxloc flex flex-col gap-[7px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
                         <div className="text-[26px] text-primary"><FontAwesomeIcon icon={faEnvelope} /></div>
                         <div className="text-[16px] font-semibold"><h3>Email Us</h3></div>
                         <div className="text-[14px] text-neutral-400"><p>info@otc.com</p></div>
                     </div>
-                    <div className="phonebox flex flex-col gap-[10px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
+                    <div className="phonebox flex flex-col gap-[7px] text-center items-center justify-center border shadow-md border-neutral-200 w-[50%] h-[130px]">
                         <div className="text-[26px] text-primary"><FontAwesomeIcon icon={faClock} /></div>
                         <div className="text-[16px] font-semibold"><h3>Working Hours</h3></div>
                         <div className="text-[14px] text-neutral-400"><p>8:00 AM - 5:00 PM</p></div>

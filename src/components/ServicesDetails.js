@@ -11,10 +11,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Serviceslist from "./subcomponents/ServicesSlide";
 import Navsection from "./subcomponents/Navsection";
+import { useEffect } from "react";
 
 
 
 const Servicesdetails = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      }, [])
 
     const { title } = useParams();
 

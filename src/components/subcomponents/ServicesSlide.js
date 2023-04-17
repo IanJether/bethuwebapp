@@ -44,7 +44,7 @@ const Serviceslist = () => {
                       <p>{items.text}</p>
                     </div>
                     <div className="absolute bottom-[-23px]">
-                      <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
+                      <Link onClick={()=>window.scrollTo(0,0)} to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
                     </div>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const Serviceslist = () => {
                       <p>{items.text}</p>
                     </div>
                     <div className="absolute bottom-[-23px]">
-                      <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
+                      <Link onClick={()=>window.scrollTo(0,0)} to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
                     </div>
                   </div>
                 </div>

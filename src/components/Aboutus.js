@@ -5,11 +5,15 @@ import Aboutblock from "./subcomponents/Aboutblock";
 import Navsection from "./subcomponents/Navsection";
 import Contactprompt from "./subcomponents/Contactprompt";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 
 const Aboutus = () => {
 
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      }, [])
 
 
 

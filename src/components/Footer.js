@@ -1,6 +1,7 @@
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight, faEnvelope, faLocationPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,19 +11,19 @@ const Footer = () => {
     const otherpages = [
         {
             name: "Home",
-            link: ""
+            link: "/"
         },
         {
             name: "About Us",
-            link: ""
+            link: "/Aboutus"
         },
         {
             name: "Services",
-            link: ""
+            link: "/Services"
         },
         {
             name: "Contact",
-            link: ""
+            link: "/Contact"
         },
     ]
 
@@ -95,7 +96,7 @@ const Footer = () => {
                     {otherpages.map((items, index) => {
 
                         return (
-                            <div key={index} className="flex gap-[20px]">
+                            <Link to={items.link} key={index}><div className="flex gap-[20px]">
                                 <div className="text-primary text-[13px]">
                                     <FontAwesomeIcon icon={faAngleRight} />
                                 </div>
@@ -103,7 +104,7 @@ const Footer = () => {
                                     <p>{items.name}</p>
                                 </div>
 
-                            </div>
+                            </div></Link>
                         )
                     })}
 
