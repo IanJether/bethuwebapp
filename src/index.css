@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .bb{
-  @apply w-[150px] h-[50px] bg-yellow-300 font-semibold text-[12px] text-black;
+  @apply w-[150px] h-[50px] bg-primary font-semibold text-[12px] text-white;
 }
 
 .bbs{
-  @apply w-[40px] h-[40px] bg-yellow-300 font-semibold text-[12px] text-black rounded-full;
+  @apply w-[40px] h-[40px] bg-primary font-semibold text-[12px] text-white rounded-full;
 }
 
 .swiper.flex .swiper-wrapper{

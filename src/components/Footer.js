@@ -15,7 +15,7 @@ const Footer = () => {
 
                 <div className="flex flex-col gap-[15px] lg:gap-[20px] lg:w-[30%]">
                     {/* Logo and contact info */}
-                    <div className="text-yellow-400 text-[23px] font-semibold">
+                    <div className="text-primary text-[23px] font-semibold">
                         <h4>LOGO</h4>
                     </div>
                     <div className="text-neutral-400 text-[12px]">
@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-[4px] lg:gap-[10px]">
 
                         <div className="flex gap-[20px]">
-                            <div className="text-[13px] text-yellow-500">
+                            <div className="text-[13px] text-primary">
                                 <FontAwesomeIcon icon={faPhone} />
                             </div>
                             <div className="text-[12px] text-neutral-200">
@@ -32,7 +32,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex gap-[20px]">
-                            <div className="text-[13px] text-yellow-500">
+                            <div className="text-[13px] text-primary">
                                 <FontAwesomeIcon icon={faLocationPin} />
                             </div>
                             <div className="text-[12px] text-neutral-200">
@@ -40,7 +40,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex gap-[20px]">
-                            <div className="text-[13px] text-yellow-500">
+                            <div className="text-[13px] text-primary">
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </div>
                             <div className="text-[12px] text-neutral-200">
@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-[5px] lg:gap-[10px] lg:w-[20%]">
                     <div className="text-white font-semibold text-[15px] lg:mb-[25px]"><h3>Other Pages</h3></div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -62,7 +62,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -71,7 +71,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -80,7 +80,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-[5px] lg:gap-[10px] lg:w-[20%]">
                     <div className="text-white font-semibold text-[15px] lg:mb-[25px]"><h3>Quick Links</h3></div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -102,7 +102,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -111,7 +111,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -120,7 +120,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-[20px]">
-                        <div className="text-yellow-500 text-[13px]">
+                        <div className="text-primary text-[13px]">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </div>
                         <div className="text-[12px] text-neutral-200 ">
@@ -139,16 +139,16 @@ const Footer = () => {
                     </div>
                     <div className="flex gap-[20px]">
                         <div className="text-black text-[17px]">
-                            <div className="flex h-[35px] w-[35px] bg-yellow-500 justify-center items-center rounded-full"><FontAwesomeIcon icon={faFacebook} /></div>
+                            <div className="flex h-[35px] w-[35px] bg-primary justify-center items-center rounded-full"><FontAwesomeIcon icon={faFacebook} /></div>
                         </div>
                         <div className="text-black text-[17px]">
-                            <div className="flex h-[35px] w-[35px] bg-yellow-500 justify-center items-center rounded-full"><FontAwesomeIcon icon={faTwitter} /></div>
+                            <div className="flex h-[35px] w-[35px] bg-primary justify-center items-center rounded-full"><FontAwesomeIcon icon={faTwitter} /></div>
                         </div>
                         <div className="text-black text-[17px]">
-                            <div className="flex h-[35px] w-[35px] bg-yellow-500 justify-center items-center rounded-full"><FontAwesomeIcon icon={faInstagram} /></div>
+                            <div className="flex h-[35px] w-[35px] bg-primary justify-center items-center rounded-full"><FontAwesomeIcon icon={faInstagram} /></div>
                         </div>
                         <div className="text-black text-[17px]">
-                            <div className="flex h-[35px] w-[35px] bg-yellow-500 justify-center items-center rounded-full"><FontAwesomeIcon icon={faLinkedin} /></div>
+                            <div className="flex h-[35px] w-[35px] bg-primary justify-center items-center rounded-full"><FontAwesomeIcon icon={faLinkedin} /></div>
                         </div>
                     </div>
                 </div>

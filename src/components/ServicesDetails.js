@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Serviceslist from "./subcomponents/ServicesSlide";
 
 
 
@@ -49,8 +50,12 @@ const Servicesdetails = () => {
                 )
             })}
 
+            <div className="detslide px-[7%] lg:px-[17%]">
+                <Serviceslist/>
+            </div>
 
-            <div className="slider lg:hidden px-[7%]">
+
+            {/* <div className="slider lg:hidden px-[7%]">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                     pagination={{ clickable: true }}
@@ -136,7 +141,7 @@ const Servicesdetails = () => {
                         )
                     })}
                 </Swiper>
-            </div>
+            </div> */}
 
 
         </div>

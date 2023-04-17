@@ -32,10 +32,10 @@ const Navbar = () => {
             <div className="flex hidden lg:flex justify-between bg-neutral-900 h-[50px] lg:px-[17%] text-white">
                 <div className="flex items-center gap-[10px] text-[12px]">
                     <div>
-                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faLocationPin}/> </span> Tarus Building, Eldoret CBD</p>
+                        <p> <span className="text-primary mr-[5px]"> <FontAwesomeIcon icon={faLocationPin}/> </span> Tarus Building, Eldoret CBD</p>
                     </div>
                     <div>
-                        <p> <span className="text-yellow-300 mr-[5px]"> <FontAwesomeIcon icon={faPhone}/> </span> ( +254 ) - 794949822</p>                        
+                        <p> <span className="text-primary mr-[5px]"> <FontAwesomeIcon icon={faPhone}/> </span> ( +254 ) - 794949822</p>                        
                     </div>
 
                 </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     <div>
                         <p>Follow Us:</p>
                     </div>
-                    <div className="flex gap-[20px] text-[16px] text-yellow-300">
+                    <div className="flex gap-[20px] text-[16px] text-primary">
                         <div><FontAwesomeIcon icon={faFacebook}/></div>
                         <div><FontAwesomeIcon icon={faTwitter}/></div>
                         <div><FontAwesomeIcon icon={faInstagram}/></div>
@@ -56,7 +56,7 @@ const Navbar = () => {
 
             <div className="flex justify-between h-[60px] lg:px-[17%] items-center">
 
-                <div className="font-bold lg:text-yellow-500 lg:w-[150px]">
+                <div className="font-bold lg:text-primary lg:w-[150px]">
                     <h2>LOGO</h2>
                 </div>
 

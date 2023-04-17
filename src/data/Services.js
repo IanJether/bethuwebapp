@@ -1,12 +1,20 @@
 import { faSpeakerDeck } from "@fortawesome/free-brands-svg-icons";
 import man3 from "../images/people/man3.jpg"
+import pic1 from "../images/Gbag.jpg"
+import pic2 from "../images/Gbook.jpg"
+import pic3 from "../images/Lbook.jpg"
+import pic4 from "../images/Llap.jpg"
+import pic5 from "../images/Ggrad.jpg"
+import pic6 from "../images/Ggrad5.jpg"
+import pic7 from "../images/people/man3.jpg"
+import pic8 from "../images/people/man3.jpg"
 import { faArrowRight, faCheckCircle, faCheckSquare, faChessKnight, faClipboard, faList, faNewspaper, faPaperclip, faQuoteRight, faSchool, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const ServicesList = [
     {
-        image : man3,
+        image : pic1,
         icon : faCheckSquare,
         title : "Carrer Guidance and Counseling",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",
@@ -17,7 +25,7 @@ const ServicesList = [
         bottomicon : faArrowRight,
     },
     {
-        image : man3,
+        image : pic2,
         icon : faList,
         title : "Course Selection",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",
@@ -28,7 +36,7 @@ const ServicesList = [
         bottomicon : faArrowRight,
     },
     {
-        image : man3,
+        image : pic3,
         icon : faSchool,
         title : "University Application",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",
@@ -39,7 +47,7 @@ const ServicesList = [
         bottomicon : faArrowRight,
     },
     {
-        image : man3,
+        image : pic4,
         icon : faClipboard,
         title : "Visa Processing Pre-depature Services",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",
@@ -50,7 +58,7 @@ const ServicesList = [
         bottomicon : faArrowRight,
     },
     {
-        image : man3,
+        image : pic5,
         icon : faNewspaper,
         title : "Exam Booking and Training",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",
@@ -61,7 +69,7 @@ const ServicesList = [
         bottomicon : faArrowRight,
     },
     {
-        image : man3,
+        image : pic6,
         icon : faThumbsUp,
         title : "Follow Up",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.",

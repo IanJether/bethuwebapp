@@ -2,8 +2,9 @@ import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faSchool, faT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+
+import Aboutblock from "./subcomponents/Aboutblock";
+import Serviceslist from "./subcomponents/ServicesSlide";
 
 const Home = () => {
 
@@ -16,10 +17,10 @@ const Home = () => {
 
             <div className="one mt-[55px] lg:mt-[100px] flex flex-col-reverse lg:flex-row">
                 <div className="oneleft lg:w-[50%] px-[7%] lg:pl-[17%] lg:justify-center flex flex-col gap-[25px] text-white bg-neutral-900 pt-[50px] pb-[100px] mt-[-2px]">
-                    <div className="font-semibold text-[26px]">
-                        <h2>We Help You <span className="bg-yellow-300 text-black"> Study Abroad </span> In The UK, US and Europe</h2>
+                    <div className="font-semibold text-[31px]">
+                        <h2>We Help You <span className=" ">Study Abroad</span> In The UK, US and Europe</h2>
                     </div>
-                    <div className="text-[13px]">
+                    <div className="text-[15px]">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit recusandae voluptatem officiis culpa veniam quaerat.</p>
                     </div>
                     <div>
@@ -27,8 +28,8 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className="oneright w-screen h-[250px] lg:h-full lg:w-[50%]">
-                    <img className="object-cover h-full w-full" src={require("../images/group.jpg")} alt="" />
+                <div className="oneright w-screen h-[250px] lg:h-[80vh] lg:w-[50%]">
+                    <img className="object-cover h-full w-full" src={require("../images/Ggrad4.jpg")} alt="" />
 
                 </div>
             </div>
@@ -36,36 +37,36 @@ const Home = () => {
             {/* the second block - KUJISIFU */}
 
             <div className="two lg:px-[17%] flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
-                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                    <div className="text-yellow-500 text-[30px]">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+                    <div className="text-primary text-[30px]">
                         <FontAwesomeIcon icon={faSchool} />
                     </div>
-                    <div className="text-[17px] font-semibold">
-                        <h3>Good Universities and Colleges</h3>
+                    <div className="text-[18px] font-semibold">
+                        <h3>Good Universities</h3>
                     </div>
-                    <div className="text-[13px] text-neutral-500">
+                    <div className="text-[14px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
                 </div>
-                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                    <div className="text-yellow-500 text-[30px]">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+                    <div className="text-primary text-[30px]">
                         <FontAwesomeIcon icon={faUser} />
                     </div>
-                    <div className="text-[17px] font-semibold">
-                        <h3>Experienced Proffessional Staff</h3>
+                    <div className="text-[18px] font-semibold">
+                        <h3>Experienced Staff</h3>
                     </div>
-                    <div className="text-[13px] text-neutral-500">
+                    <div className="text-[14px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
                 </div>
-                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                    <div className="text-yellow-500 text-[30px]">
+                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+                    <div className="text-primary text-[30px]">
                         <FontAwesomeIcon icon={faCheckCircle} />
                     </div>
-                    <div className="text-[17px] font-semibold">
+                    <div className="text-[18px] font-semibold">
                         <h3>Competent Advisory</h3>
                     </div>
-                    <div className="text-[13px] text-neutral-500">
+                    <div className="text-[14px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
                 </div>
@@ -74,106 +75,15 @@ const Home = () => {
 
             {/* the third block - ABOUT */}
 
-            <div className="three lg:flex lg:gap-[20px] px-[7%] lg:px-[17%] py-[40px]">
-                <div className="threeleft flex flex-col gap-[10px] lg:w-[50%]">
-                    <div className="h-250px">
-                        <img className="object-cover" src={require("../images/meeting.jpg")} alt="" />
-                    </div>
-                    <div className="flex flex-col lg:flex-row lg:gap-[10px]">
-                        <div className="bg-black lg:w-[50%] flex flex-col gap-[9px] items-center justify-center py-[20px]">
-                            <div className="text-[23px] text-yellow-500">
-                                <FontAwesomeIcon icon={faThumbsUp} />
-                            </div>
-                            <div className="text-white font-bold">
-                                <h3>10+</h3>
-                            </div>
-                            <div className="text-neutral-300 text-[12px]">
-                                <p>Years Of Experience</p>
-                            </div>
-                        </div>
-                        <div className="h-[250px] lg:h-full lg:w-[50%]">
-                            <img className="object-cover" src={require("../images/laptop.jpg")} alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div className="threeright flex flex-col gap-[15px] lg:w-[50%]">
-                    <div className="text-[13px] font-semibold">
-                        <h3>About Us</h3>
-                        <div className="border-b-4 border-yellow-400 w-[10%]"></div>
-                    </div>
-                    <div className="text-[20px] font-semibold">
-                        <h3>We Have over 10 years of Experience in Helping Students Study Abroad</h3>
-                    </div>
-                    <div className="text-[13px] text-neutral-500">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aperiam eum quos repellendus fuga possimus tenetur velit praesentium debitis voluptatibus, dolor porro nihil illo maxime rem delectus error distinctio culpa?</p>
-                    </div>
-                    <div className="lg:flex">
-
-                        <div className="flex flex-col gap-[5px] lg:w-[50%]">
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>Australia</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>Canada</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>UK</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>USA</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>Sweden</p>
-                                </div>
-                            </div>
-                            <div className="flex gap-[10px]">
-                                <div className="text-yellow-500 text-[15px]">
-                                    <FontAwesomeIcon icon={faCheckCircle} />
-                                </div>
-                                <div className="text-[13px] text-neutral-500">
-                                    <p>Spain</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="h-[250px] lg:h-full lg:w-[50%] mt-[15px] lg:mt-[0]">
-                            <img className="object-cover h-full w-full" src={require("../images/glaptop.jpg")} alt="" />
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <Aboutblock />
 
             {/* the fourth block -SERVICES */}
 
-            <div className="four px-[7%] lg:px-[17%] bg-slate-100 py-[50px]">
+            <div className="four px-[7%] lg:px-[17%] bg-slate-100 py-[60px]">
                 <div className="fourone flex flex-col lg:flex-row lg:justify-between gap-[20px] pb-[40px]">
                     <div className="text-[13px] font-semibold uppercase">
                         <h3>Services</h3>
-                        <div className="border-b-4 border-yellow-400 w-[10%] lg:w-[50%]"></div>
+                        <div className="border-b-4 border-primary w-[10%] lg:w-[50%]"></div>
                     </div>
                     <div className="lg:text-center">
                         <h2 className="text-[20px] font-semibold mb-[4px]">Services We Offer</h2>
@@ -184,126 +94,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="slider lg:hidden">
-                    <Swiper
-                        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-                        pagination={{ clickable: true }}
-                        spaceBetween={10}
-                        slidesPerView={1}
-                        autoplay={{
-                            delay: 2000,
-                            disableOnInteraction: false,
-                        }}
-                        className=" swipe flex justify-center items-center"
-                        data
-                    >
-                        {ServicesList.map((items) => {
-
-                            const address = "/Services/" + items.title;
-
-                            return (
-                                <SwiperSlide className="flex mx-auto justify-center items-center pt-[] pb-[60px]" key={items.key}>
-                                    <div className="otherservice mx-auto flex flex-col items-center">
-                                        <div className="w-[100%] h-[250px] overflow-hidden">
-                                            <img className="h-full w-full object-cover " src={items.image} alt="" />
-                                        </div>
-                                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                                            <div className="text-yellow-500 text-[30px]">
-                                                <FontAwesomeIcon icon={items.icon} />
-                                            </div>
-                                            <div className="text-[17px] font-semibold">
-                                                <h3>{items.title}</h3>
-                                            </div>
-                                            <div className="text-[13px] text-neutral-500">
-                                                <p>{items.text}</p>
-                                            </div>
-                                            <div className="absolute bottom-[-23px]">
-                                                <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            )
-                        })}
-                    </Swiper>
+                <div className="foutwo pt-[20px]">
+                    <Serviceslist />
                 </div>
 
-                <div className="slider hidden lg:block">
-                    <Swiper
-                        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-                        pagination={{ clickable: true }}
-                        spaceBetween={10}
-                        slidesPerView={3}
-                        autoplay={{
-                            delay: 2000,
-                            disableOnInteraction: false,
-                        }}
-                        className=" swipe flex justify-center items-center"
-                        data
-                    >
-                        {ServicesList.map((items) => {
-
-                            const address = "/Services/" + items.title;
-
-                            return (
-                                <SwiperSlide className="flex mx-auto justify-center items-center pb-[50px]" key={items.key}>
-                                    <div className="otherservice mx-auto flex flex-col items-center">
-                                        <div className="w-[100%] h-[250px] overflow-hidden">
-                                            <img className="h-full w-full object-cover " src={items.image} alt="" />
-                                        </div>
-                                        <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                                            <div className="text-yellow-500 text-[30px]">
-                                                <FontAwesomeIcon icon={items.icon} />
-                                            </div>
-                                            <div className="text-[17px] font-semibold">
-                                                <h3>{items.title}</h3>
-                                            </div>
-                                            <div className="text-[13px] text-neutral-500">
-                                                <p>{items.text}</p>
-                                            </div>
-                                            <div className="absolute bottom-[-23px]">
-                                                <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            )
-                        })}
-                    </Swiper>
-                </div>
-                {/* <div className="fourtwo flex flex-col lg:flex-row gap-[30px] hidden ">
-
-
-                    {ServicesList.filter((array, index) => index < 3).map((items) => {
-
-                        const address = "/Services/" + items.title;
-
-
-                        return (
-                            <div className="flex flex-col items-center">
-                                <div className="w-[100%] h-[250px] overflow-hidden">
-                                    <img className="h-full w-full object-cover " src={items.image} alt="" />
-                                </div>
-                                <div className="relative bg-white mt-[-50px] flex flex-col gap-[23px] items-center justify-center w-[90%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-yellow-300">
-                                    <div className="text-yellow-500 text-[30px]">
-                                        <FontAwesomeIcon icon={items.icon} />
-                                    </div>
-                                    <div className="text-[17px] font-semibold">
-                                        <h3>{items.title}</h3>
-                                    </div>
-                                    <div className="text-[13px] text-neutral-500">
-                                        <p>{items.text}</p>
-                                    </div>
-                                    <div className="absolute bottom-[-23px]">
-                                        <Link to={address}><button className="bbs"><FontAwesomeIcon icon={items.bottomicon} /></button></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-
-
-                </div> */}
 
             </div>
 
@@ -319,7 +113,7 @@ const Home = () => {
                     <div className="flex flex-col gap-[10px] text-white">
                         <div className="text-[13px] font-semibold ">
                             <h2>Testimonials</h2>
-                            <div className="border-b-4 border-yellow-400 w-[4%]"></div>
+                            <div className="border-b-4 border-primary w-[4%]"></div>
                         </div>
                         <div className="text-[20px] font-semibold "><h3>What They Say About Us</h3></div>
                         <div className="text-[13px] text-neutral-200 "><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem neque sit impedit eaque natus</p></div>
@@ -339,7 +133,7 @@ const Home = () => {
                                         <div className="text-[13px] text-neutral-500"><p>MD, Fineteklabs</p></div>
                                     </div>
                                 </div>
-                                <div className="text-yellow-300 text-[30px]">
+                                <div className="text-primary text-[30px]">
                                     <FontAwesomeIcon icon={faQuoteRight} />
                                 </div>
 
