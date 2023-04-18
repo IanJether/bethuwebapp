@@ -68,7 +68,7 @@ const Home = () => {
             {/* the second block - KUJISIFU */}
 
 
-            <div className="two swiper-wrapper lg:hidden lg:px-[17%] mx-auto flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
+            <div className="two lg:hidden lg:px-[17%] mx-auto flex flex-col gap-[30px] items-center mt-[-50px]">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                     pagination={{ clickable: true }}
@@ -78,13 +78,13 @@ const Home = () => {
                         delay: 2000,
                         disableOnInteraction: false,
                     }}
-                    className="swiper flex mx-auto justify-center items-center w-[80vw]"
+                    className="swiper flex  mx-auto justify-center items-center w-[80vw]"
                     data
                 >
                     {kujisifu.map((items, index) => {
 
                         return (
-                            <SwiperSlide className="flex mx-auto justify-center items-center pb-[60px]">
+                            <SwiperSlide className="flex lg:hidden mx-auto justify-center items-center pb-[60px]">
                                 <div key={index} className="flex flex-col bg-white gap-[23px] items-center justify-center w-full h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
                                     <div className="text-primary text-[30px]">
                                         <FontAwesomeIcon icon={items.icon} />
