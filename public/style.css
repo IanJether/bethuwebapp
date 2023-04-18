@@ -700,6 +700,10 @@ video {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -768,10 +772,6 @@ video {
   height: 60px;
 }
 
-.h-\[700px\] {
-  height: 700px;
-}
-
 .h-full {
   height: 100%;
 }
@@ -780,20 +780,40 @@ video {
   height: 100vh;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[540px\] {
-  height: 540px;
-}
-
 .h-\[\] {
   height: ;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
+.h-\[46px\] {
+  height: 46px;
+}
+
+.h-\[47px\] {
+  height: 47px;
+}
+
+.h-\[48px\] {
+  height: 48px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[49px\] {
+  height: 49px;
+}
+
+.h-\[52px\] {
+  height: 52px;
 }
 
 .w-\[10\%\] {
@@ -852,6 +872,58 @@ video {
   width: 100vw;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
+.w-\[140px\] {
+  width: 140px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[320px\] {
+  width: 320px;
+}
+
+.w-\[380px\] {
+  width: 380px;
+}
+
+.w-\[390px\] {
+  width: 390px;
+}
+
+.w-\[180px\] {
+  width: 180px;
+}
+
+.w-\[190px\] {
+  width: 190px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -860,8 +932,20 @@ video {
   flex-direction: column-reverse;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -874,6 +958,10 @@ video {
 
 .gap-\[10px\] {
   gap: 10px;
+}
+
+.gap-\[13px\] {
+  gap: 13px;
 }
 
 .gap-\[15px\] {
@@ -922,14 +1010,6 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[13px\] {
-  gap: 13px;
 }
 
 .overflow-hidden {
@@ -1099,16 +1179,8 @@ video {
   padding-top: 50px;
 }
 
-.pt-\[70px\] {
-  padding-top: 70px;
-}
-
 .pt-\[\] {
   padding-top: ;
-}
-
-.pb-\[0\] {
-  padding-bottom: 0;
 }
 
 .text-center {
@@ -1260,32 +1332,14 @@ video {
   outline-offset: 2px;
 }
 
-.brightness-\[44\%\] {
-  --tw-brightness: brightness(44%);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[24\%\] {
-  --tw-brightness: brightness(24%);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[94\%\] {
-  --tw-brightness: brightness(94%);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[84\%\] {
-  --tw-brightness: brightness(84%);
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .brightness-\[100\%\] {
   --tw-brightness: brightness(100%);
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-\[44\%\] {
+  --tw-brightness: brightness(44%);
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1412,6 +1466,10 @@ video {
     height: 500px;
   }
 
+  .lg\:h-\[540px\] {
+    height: 540px;
+  }
+
   .lg\:h-\[80vh\] {
     height: 80vh;
   }
@@ -1420,8 +1478,20 @@ video {
     height: 100%;
   }
 
-  .lg\:h-\[540px\] {
-    height: 540px;
+  .lg\:h-\[55px\] {
+    height: 55px;
+  }
+
+  .lg\:h-\[50px\] {
+    height: 50px;
+  }
+
+  .lg\:h-\[40px\] {
+    height: 40px;
+  }
+
+  .lg\:h-\[54px\] {
+    height: 54px;
   }
 
   .lg\:w-40 {
@@ -1466,6 +1536,50 @@ video {
 
   .lg\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[450px\] {
+    width: 450px;
+  }
+
+  .lg\:w-\[430px\] {
+    width: 430px;
+  }
+
+  .lg\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .lg\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .lg\:w-\[480px\] {
+    width: 480px;
+  }
+
+  .lg\:w-\[490px\] {
+    width: 490px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .lg\:w-\[140px\] {
+    width: 140px;
+  }
+
+  .lg\:w-\[130px\] {
+    width: 130px;
   }
 
   .lg\:flex-row {
@@ -1524,10 +1638,6 @@ video {
     padding: 40px;
   }
 
-  .lg\:p-\[\] {
-    padding: ;
-  }
-
   .lg\:px-\[0\] {
     padding-left: 0;
     padding-right: 0;
@@ -1558,10 +1668,6 @@ video {
 
   .lg\:pt-\[30px\] {
     padding-top: 30px;
-  }
-
-  .lg\:pb-\[0\] {
-    padding-bottom: 0;
   }
 
   .lg\:pt-\[70px\] {

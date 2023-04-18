@@ -56,8 +56,10 @@ const Navbar = () => {
 
             <div className="flex justify-between h-[60px] lg:px-[17%] items-center">
 
-                <div className="font-bold lg:text-primary lg:w-[150px]">
-                    <Link to="/"> <h2>LOGO</h2></Link>
+                <div className="font-bold lg:text-primary flex items-end gap-[20px]">
+                    <Link to="/"> <div><img className="h-[45px] lg:h-[54px] lg:w-[130px]" src={require("../images/logo/logo1.png")} alt="" /></div></Link>
+                        {/* <div><img className="h-[35px] w-[390px]" src={require("../images/logo/logoc.png")} alt="" /> </div>  */}
+                   
                 </div>
 
                 <div className="navbarcontent hidden lg:flex lg:items-center lg:justify-center absolute lg:relative h-screen lg:h-[0] w-[80%] lg:w-[100%] mt-[56px] lg:mt-[0] bg-white top-[1px] lg:top-[0] left-[-1px] lg:left-[0] px-[7%] lg:px-[0]">
@@ -71,7 +73,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="navbarbbutton hidden lg:block">
+                <div className="navbarbbutton hidden lg:flex lg:w-[250px] justify-end">
                    <Link to="/Contact"> <button className="bb uppercase">Contact Us</button> </Link>
 
                 </div>
