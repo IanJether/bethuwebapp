@@ -2,6 +2,8 @@ import { faArrowRight, faCheckCircle, faChessKnight, faQuoteRight, faSchool, faT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ServicesList from "../data/Services";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,9 +15,29 @@ import { useEffect } from "react";
 
 const Home = () => {
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
-      }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+
+
+    const kujisifu = [
+        {
+            icon: faSchool,
+            title: "Good Univerisities",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia."
+        },
+        {
+            icon: faUser,
+            title: "Experienced Staff",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia."
+        },
+        {
+            icon: faCheckCircle,
+            title: "Competent Advisory",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia."
+        },
+    ]
 
 
     return (
@@ -45,8 +67,67 @@ const Home = () => {
 
             {/* the second block - KUJISIFU */}
 
-            <div className="two lg:px-[17%] flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
-                <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+
+            <div className="two swiper-wrapper lg:hidden lg:px-[17%] mx-auto flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
+                <Swiper
+                    modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                    pagination={{ clickable: true }}
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                    className="swiper flex mx-auto justify-center items-center w-[80vw]"
+                    data
+                >
+                    {kujisifu.map((items, index) => {
+
+                        return (
+                            <SwiperSlide className="flex mx-auto justify-center items-center pb-[60px]">
+                                <div key={index} className="flex flex-col bg-white gap-[23px] items-center justify-center w-full h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+                                    <div className="text-primary text-[30px]">
+                                        <FontAwesomeIcon icon={items.icon} />
+                                    </div>
+                                    <div className="text-[18px] font-semibold">
+                                        <h3>{items.title}</h3>
+                                    </div>
+                                    <div className="text-[14px] text-neutral-500">
+                                        <p>{items.text}</p>
+                                    </div>
+                                </div>
+
+                            </SwiperSlide>
+                        )
+                    })}
+
+                </Swiper>
+
+
+            </div>
+
+
+            <div className="two hidden lg:flex lg:px-[17%] flex flex-col lg:flex-row gap-[30px] items-center mt-[-50px]">
+
+                {kujisifu.map((items, index) => {
+
+                    return (
+                        <div key={index} className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
+                            <div className="text-primary text-[30px]">
+                                <FontAwesomeIcon icon={items.icon} />
+                            </div>
+                            <div className="text-[18px] font-semibold">
+                                <h3>{items.title}</h3>
+                            </div>
+                            <div className="text-[14px] text-neutral-500">
+                                <p>{items.text}</p>
+                            </div>
+                        </div>
+
+                    )
+                })}
+
+                {/* <div className="flex flex-col bg-white gap-[23px] items-center justify-center w-[80%] h-[250px] text-center shadow-xl px-[5%] border-b-4 border-primary">
                     <div className="text-primary text-[30px]">
                         <FontAwesomeIcon icon={faSchool} />
                     </div>
@@ -78,7 +159,7 @@ const Home = () => {
                     <div className="text-[14px] text-neutral-500">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum repudiandae maiores mollitia.</p>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 
@@ -129,7 +210,7 @@ const Home = () => {
                     </div>
 
                     <div className="reviews lg:py-[30px]">
-                    <Reviews/>
+                        <Reviews />
                     </div>
 
 
